@@ -1,0 +1,74 @@
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Log file created: logs/pretrained_inference_20250814_143350.log
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Medical Translation with Pretrained Models
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Model: vinai-envit5
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Device: cuda
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Batch size: 8
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Log file: logs/pretrained_inference_20250814_143350.log
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Looking for input files...
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Found English file: data/en.csv
+2025-08-14 14:33:50,737 - PretrainedInference - INFO - Found Vietnamese file: data/vi.csv
+2025-08-14 14:33:50,951 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:33:50,951 - PretrainedInference - INFO - Selected model: vinai-envit5
+2025-08-14 14:33:50,951 - PretrainedInference - INFO - Model type: mt5
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - Size: ~900MB
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - Quality: Very Good
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - Device: cuda
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - Batch size: 8
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - Loading models...
+2025-08-14 14:33:50,952 - PretrainedInference - INFO - Loading mT5 model: VietAI/envit5-translation
+2025-08-14 14:33:54,757 - PretrainedInference - INFO - Models loaded successfully in 3.81 seconds
+2025-08-14 14:33:54,758 - PretrainedInference - INFO - GPU memory used: 0.63 GB
+2025-08-14 14:33:54,758 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:33:54,758 - PretrainedInference - INFO - Translating English → Vietnamese
+2025-08-14 14:33:54,758 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:33:54,758 - PretrainedInference - INFO - Translating file: data/en.csv (en2vi)
+2025-08-14 14:33:54,766 - PretrainedInference - INFO - Loaded 1000 rows from data/en.csv
+2025-08-14 14:33:54,766 - PretrainedInference - INFO - Using column: English
+2025-08-14 14:38:32,490 - PretrainedInference - INFO - Completed 1000 translations
+2025-08-14 14:38:32,490 - PretrainedInference - INFO - EN→VI completed in 277.73 seconds
+2025-08-14 14:38:32,491 - PretrainedInference - INFO - Average: 0.278 seconds per sentence
+2025-08-14 14:38:32,491 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:38:32,491 - PretrainedInference - INFO - Translating Vietnamese → English
+2025-08-14 14:38:32,491 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:38:32,491 - PretrainedInference - INFO - Translating file: data/vi.csv (vi2en)
+2025-08-14 14:38:32,499 - PretrainedInference - INFO - Loaded 1000 rows from data/vi.csv
+2025-08-14 14:38:32,499 - PretrainedInference - INFO - Using column: Vietnamese
+2025-08-14 14:51:51,534 - PretrainedInference - INFO - Completed 1000 translations
+2025-08-14 14:51:51,535 - PretrainedInference - INFO - VI→EN completed in 799.04 seconds
+2025-08-14 14:51:51,535 - PretrainedInference - INFO - Average: 0.799 seconds per sentence
+2025-08-14 14:51:51,535 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:51:51,535 - PretrainedInference - INFO - Creating Results
+2025-08-14 14:51:51,536 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:51:51,552 - PretrainedInference - INFO - Results saved to: results.csv
+2025-08-14 14:51:51,567 - PretrainedInference - INFO - ZIP file created: results.zip
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - Translation Statistics
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - EN→VI translations: 1000
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - VI→EN translations: 1000
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - 
+Sample Results (first 3):
+2025-08-14 14:51:51,568 - PretrainedInference - INFO - Row 1:
+2025-08-14 14:51:51,569 - PretrainedInference - INFO -   English: vi: Tuỷ sống (A 18.0 ), vùng cột sống - trục - đội. dịch tiếng Việt sang tiếng Anh: Lao cột sống (A ...
+2025-08-14 14:51:51,569 - PretrainedInference - INFO -   Vietnamese: vi: Đánh giá triệu chứng lâm sàng, cận lâm sàng của bệnh nhân viêm tai giữa ứ dịch và viêm tai giữa ...
+2025-08-14 14:51:51,569 - PretrainedInference - INFO - Row 2:
+2025-08-14 14:51:51,569 - PretrainedInference - INFO -   English: en: Abnormal findings on diagnostic imaging of other parts of the gastrointestinal tract...
+2025-08-14 14:51:51,569 - PretrainedInference - INFO -   Vietnamese: vi: Đánh giá triệu chứng lâm sàng, cận lâm sàng của bệnh nhân tràn dịch màng tai và V a tại Khoa Tai...
+2025-08-14 14:51:51,569 - PretrainedInference - INFO - Row 3:
+2025-08-14 14:51:51,569 - PretrainedInference - INFO -   English: en: Injury to other tendons and extensors of the other tendons at the level of the forearm...
+2025-08-14 14:51:51,569 - PretrainedInference - INFO -   Vietnamese: vi: Có mối liên quan giữa giãn mạch và rối loạn chức năng âm đạo....
+2025-08-14 14:51:51,569 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:51:51,569 - PretrainedInference - INFO - ✅ Translation completed successfully!
+2025-08-14 14:51:51,569 - PretrainedInference - INFO - Output: results.csv
+2025-08-14 14:51:51,569 - PretrainedInference - INFO - ZIP: results.zip
+2025-08-14 14:51:51,570 - PretrainedInference - INFO - Log: logs/pretrained_inference_20250814_143350.log
+2025-08-14 14:51:51,570 - PretrainedInference - INFO - ============================================================

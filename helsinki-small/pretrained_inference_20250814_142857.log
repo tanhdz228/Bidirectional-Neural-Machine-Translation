@@ -1,0 +1,75 @@
+2025-08-14 14:28:57,129 - PretrainedInference - INFO - Log file created: logs/pretrained_inference_20250814_142857.log
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Medical Translation with Pretrained Models
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Model: helsinki-small
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Device: cuda
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Batch size: 8
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Log file: logs/pretrained_inference_20250814_142857.log
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Looking for input files...
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Found English file: data/en.csv
+2025-08-14 14:28:57,130 - PretrainedInference - INFO - Found Vietnamese file: data/vi.csv
+2025-08-14 14:28:57,369 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Selected model: helsinki-small
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Model type: marian
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Size: ~300MB
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Quality: Good
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Device: cuda
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Batch size: 8
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Loading models...
+2025-08-14 14:28:57,370 - PretrainedInference - INFO - Loading EN→VI model: Helsinki-NLP/opus-mt-en-vi
+2025-08-14 14:29:20,695 - PretrainedInference - INFO - Loading VI→EN model: Helsinki-NLP/opus-mt-vi-en
+2025-08-14 14:29:41,948 - PretrainedInference - INFO - Models loaded successfully in 44.58 seconds
+2025-08-14 14:29:41,949 - PretrainedInference - INFO - GPU memory used: 0.58 GB
+2025-08-14 14:29:41,950 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:29:41,950 - PretrainedInference - INFO - Translating English → Vietnamese
+2025-08-14 14:29:41,950 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:29:41,950 - PretrainedInference - INFO - Translating file: data/en.csv (en2vi)
+2025-08-14 14:29:41,962 - PretrainedInference - INFO - Loaded 1000 rows from data/en.csv
+2025-08-14 14:29:41,962 - PretrainedInference - INFO - Using column: English
+2025-08-14 14:31:30,989 - PretrainedInference - INFO - Completed 1000 translations
+2025-08-14 14:31:30,990 - PretrainedInference - INFO - EN→VI completed in 109.04 seconds
+2025-08-14 14:31:30,990 - PretrainedInference - INFO - Average: 0.109 seconds per sentence
+2025-08-14 14:31:30,990 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:31:30,990 - PretrainedInference - INFO - Translating Vietnamese → English
+2025-08-14 14:31:30,990 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:31:30,990 - PretrainedInference - INFO - Translating file: data/vi.csv (vi2en)
+2025-08-14 14:31:30,996 - PretrainedInference - INFO - Loaded 1000 rows from data/vi.csv
+2025-08-14 14:31:30,996 - PretrainedInference - INFO - Using column: Vietnamese
+2025-08-14 14:32:21,592 - PretrainedInference - INFO - Completed 1000 translations
+2025-08-14 14:32:21,594 - PretrainedInference - INFO - VI→EN completed in 50.60 seconds
+2025-08-14 14:32:21,594 - PretrainedInference - INFO - Average: 0.051 seconds per sentence
+2025-08-14 14:32:21,594 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:32:21,594 - PretrainedInference - INFO - Creating Results
+2025-08-14 14:32:21,594 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:32:21,606 - PretrainedInference - INFO - Results saved to: results.csv
+2025-08-14 14:32:21,625 - PretrainedInference - INFO - ZIP file created: results.zip
+2025-08-14 14:32:21,625 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:32:21,625 - PretrainedInference - INFO - Translation Statistics
+2025-08-14 14:32:21,625 - PretrainedInference - INFO - ============================================================
+2025-08-14 14:32:21,625 - PretrainedInference - INFO - EN→VI translations: 1000
+2025-08-14 14:32:21,626 - PretrainedInference - INFO - VI→EN translations: 1000
+2025-08-14 14:32:21,626 - PretrainedInference - INFO - 
+Sample Results (first 3):
+2025-08-14 14:32:21,626 - PretrainedInference - INFO - Row 1:
+2025-08-14 14:32:21,626 - PretrainedInference - INFO -   English: A8.0 Mt....
+2025-08-14 14:32:21,626 - PretrainedInference - INFO -   Vietnamese: Để đạt được, các triệu chứng cấp tính của bệnh nhân mắc bệnh ung thư tuyến viêm ngực với bệnh viêm n...
+2025-08-14 14:32:21,626 - PretrainedInference - INFO - Row 2:
+2025-08-14 14:32:21,627 - PretrainedInference - INFO -   English: Unexpected discovery of visual diagnostics of other parts of the digestive tract...
+2025-08-14 14:32:21,627 - PretrainedInference - INFO -   Vietnamese: Các triệu chứng cận ung thư, các triệu chứng cận ung thư của các bệnh nhân bị viêm mạch máu và V ở b...
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - Row 3:
+2025-08-14 14:32:21,627 - PretrainedInference - INFO -   English: The tendon damage and muscle extensions at the limbs....
+2025-08-14 14:32:21,627 - PretrainedInference - INFO -   Vietnamese: Có một mối liên hệ giữa sự bóp méo và co thắt....
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - 
+============================================================
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - ✅ Translation completed successfully!
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - Output: results.csv
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - ZIP: results.zip
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - Log: logs/pretrained_inference_20250814_142857.log
+2025-08-14 14:32:21,627 - PretrainedInference - INFO - ============================================================
